@@ -3,7 +3,7 @@
     "name": "IDK Eats",
     "slug": "idk-eats",
     "scheme": "idkeats",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -58,7 +58,7 @@
         "NSLocationWhenInUseUsageDescription": "IDK Eats needs your location to find nearby restaurants.",
         "ITSAppUsesNonExemptEncryption": false
       },
-      "buildNumber": "201"
+      "buildNumber": "202"
     },
     "android": {
       "package": "com.cwinland78.idkeats",
