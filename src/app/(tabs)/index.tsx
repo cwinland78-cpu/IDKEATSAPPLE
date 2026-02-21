@@ -83,10 +83,9 @@ export default function HomeScreen() {
   const [pendingPlace, setPendingPlace] = useState<Place | null>(null);
   const [pendingMapPlace, setPendingMapPlace] = useState<Place | null>(null);
 
-  // Ad frequency counters - show ads every 5 actions
+  // Ad frequency counters
   const spinCountRef = useRef(0);
-  const mapOpenCountRef = useRef(0);
-  const AD_FREQUENCY = 5;
+  const SPIN_AD_FREQUENCY = 3; // Show rewarded ad every 3 spins
 
   const places = usePlacesStore((s) => s.places);
   const isLoading = usePlacesStore((s) => s.isLoading);
@@ -371,7 +370,7 @@ export default function HomeScreen() {
 
         // Increment spin count and check if we should show ad
         spinCountRef.current += 1;
-        const shouldShowAd = !isPremium && spinCountRef.current >= AD_FREQUENCY;
+        const shouldShowAd = !isPremium && spinCountRef.current >= SPIN_AD_FREQUENCY;
 
         if (shouldShowAd) {
           // Reset counter and show rewarded ad
@@ -440,17 +439,12 @@ export default function HomeScreen() {
       diningType: 'dine-in',
     });
 
-    // Increment map open count and check if we should show ad
-    mapOpenCountRef.current += 1;
-    const shouldShowAd = !isPremium && mapOpenCountRef.current >= AD_FREQUENCY;
-
-    if (shouldShowAd) {
-      // Reset counter and show interstitial ad
-      mapOpenCountRef.current = 0;
+    // Show interstitial ad every time for non-premium users
+    if (!isPremium) {
       setPendingMapPlace(place);
       setShowInterstitialAd(true);
     } else {
-      // Open maps directly (no ad this time)
+      // Premium users go straight to maps
       openInMaps(place);
     }
   }, [addVisit, openInMaps, isPremium]);
