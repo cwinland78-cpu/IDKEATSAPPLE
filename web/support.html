@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDK Eats - Support</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+      min-height: 100vh;
+      color: #fff;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .logo {
+      font-size: 48px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #7c3aed, #c026d3, #f43f5e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .tagline {
+      color: rgba(255,255,255,0.5);
+      margin-top: 8px;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      color: #fff;
+    }
+    .contact-btn {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: rgba(124, 58, 237, 0.2);
+      padding: 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #fff;
+      transition: background 0.2s;
+    }
+    .contact-btn:hover {
+      background: rgba(124, 58, 237, 0.3);
+    }
+    .icon {
+      width: 48px;
+      height: 48px;
+      background: #7c3aed;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .contact-info h3 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .contact-info p {
+      color: rgba(255,255,255,0.6);
+      font-size: 14px;
+      margin-top: 4px;
+    }
+    .faq-item {
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .faq-item h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .faq-item p {
+      color: rgba(255,255,255,0.6);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: rgba(255,255,255,0.4);
+      font-size: 14px;
+    }
+    .footer a {
+      color: #a78bfa;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">IDK Eats</div>
+      <p class="tagline">The answer to "I don't know where to eat"</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact Us</h2>
+      <a href="mailto:Qwikymart@yahoo.com?subject=IDK Eats Support" class="contact-btn">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </div>
+        <div class="contact-info">
+          <h3>Email Support</h3>
+          <p>Qwikymart@yahoo.com</p>
+        </div>
+      </a>
+      <p style="text-align: center; margin-top: 16px; color: rgba(255,255,255,0.5); font-size: 14px;">
+        We typically respond within 24 hours
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>How does the spin work?</h3>
+        <p>The app uses your location to find nearby restaurants, then randomly picks one when you tap the spin button. You can filter by distance and dining type to narrow down options.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Why do I need to allow location access?</h3>
+        <p>Location access lets us show you restaurants that are actually near you and calculate accurate distances. We never store or share your location data.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I remove ads?</h3>
+        <p>Tap the "Go Premium" button to make a one-time purchase of $6.99. This removes all ads forever — no subscription required.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>I purchased premium but still see ads</h3>
+        <p>Try closing and reopening the app. If ads persist, tap "Restore Purchases" on the upgrade screen. If the issue continues, contact us.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>The app shows no restaurants near me</h3>
+        <p>Try increasing your distance filter (up to 15 miles). If you're in a very rural area, some restaurants may not be nearby.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>IDK Eats v1.0.0</p>
+      <p style="margin-top: 8px;"><a href="privacy.html">Privacy Policy</a></p>
+      <p style="margin-top: 16px;">Made with ❤️ for hungry people everywhere</p>
+    </div>
+  </div>
+</body>
+</html>

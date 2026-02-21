@@ -1,0 +1,95 @@
+{
+  "expo": {
+    "name": "IDK Eats",
+    "slug": "idk-eats",
+    "scheme": "idkeats",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "icon": "./assets/iconfinal.png",
+    "splash": {
+      "image": "./assets/idk-eats-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vibecode.nibblenow.0djx5j",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-5879329589086028~3567654349"
+      },
+      "skAdNetworkItems": [
+        {
+          "skAdNetworkIdentifier": "cstr6suwn9.skadnetwork"
+        },
+        {
+          "skAdNetworkIdentifier": "4fzdc2evr5.skadnetwork"
+        },
+        {
+          "skAdNetworkIdentifier": "2fnua5tdw4.skadnetwork"
+        },
+        {
+          "skAdNetworkIdentifier": "ydx93a7ass.skadnetwork"
+        },
+        {
+          "skAdNetworkIdentifier": "5a6flpkh64.skadnetwork"
+        },
+        {
+          "skAdNetworkIdentifier": "p78adar5gk.skadnetwork"
+        },
+        {
+          "skAdNetworkIdentifier": "v72qych5uu.skadnetwork"
+        },
+        {
+          "skAdNetworkIdentifier": "c6k4g5qg8m.skadnetwork"
+        },
+        {
+          "skAdNetworkIdentifier": "s39g8k73mm.skadnetwork"
+        },
+        {
+          "skAdNetworkIdentifier": "3qy4746246.skadnetwork"
+        }
+      ],
+      "infoPlist": {
+        "NSCalendarsUsageDescription": "IDK Eats can add a dining plan to your calendar only if you choose to save it. We only access your calendar when you tap to add an event.",
+        "NSContactsUsageDescription": "IDK Eats can use your contacts only if you choose to invite friends or share recommendations. We only access contacts when you initiate it.",
+        "NSCameraUsageDescription": "IDK Eats lets you take or upload a photo when you choose to (for example, for profile or support). We only access the camera if you tap a feature that needs it.",
+        "NSLocationWhenInUseUsageDescription": "IDK Eats needs your location to find nearby restaurants.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "buildNumber": "201"
+    },
+    "android": {
+      "package": "com.cwinland78.idkeats",
+      "edgeToEdgeEnabled": true,
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-5879329589086028~8113110806"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "versionCode": 192
+    },
+    "plugins": [
+      "expo-router",
+      "expo-location",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "iosAppId": "ca-app-pub-5879329589086028~3567654349",
+          "androidAppId": "ca-app-pub-5879329589086028~8113110806"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4485c546-887e-49a7-b836-00374f27f5f1"
+      }
+    }
+  }
+}
