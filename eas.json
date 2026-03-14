@@ -6,23 +6,13 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal",
-      "env": {
-        "EXPO_PUBLIC_VIBECODE_REVENUECAT_TEST_KEY": "test_ZxgBiAiYXzSEVSELldpnNHwmeEf",
-        "EXPO_PUBLIC_VIBECODE_REVENUECAT_APPLE_KEY": "appl_FvzUxfMZJCZafRdNDFDfXBYegjM"
-      }
+      "distribution": "internal"
     },
     "preview": {
-      "distribution": "internal",
-      "env": {
-        "EXPO_PUBLIC_VIBECODE_REVENUECAT_APPLE_KEY": "appl_FvzUxfMZJCZafRdNDFDfXBYegjM"
-      }
+      "distribution": "internal"
     },
     "production": {
-      "autoIncrement": true,
-      "env": {
-        "EXPO_PUBLIC_VIBECODE_REVENUECAT_APPLE_KEY": "appl_FvzUxfMZJCZafRdNDFDfXBYegjM"
-      }
+      "autoIncrement": true
     }
   },
   "submit": {
